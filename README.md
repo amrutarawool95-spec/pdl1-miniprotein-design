@@ -8,15 +8,15 @@ Computational design of compact protein binders targeting the PD-1-facing surfac
 
 Can de novo miniprotein scaffolds be designed to occupy the PD-1-binding surface of PD-L1 and serve as computationally plausible checkpoint-blocking candidates?
 
-This project uses the PD-1/PD-L1 complex in PDB **4ZQK** as the structural starting point. PD-L1 is a clinically validated and already drugged checkpoint target, so this project should be described as an exploration of an alternative compact binder modality—not as a solution to an undruggable target.
+This project uses the PD-1/PD-L1 complex in PDB **4ZQK** as the structural starting point. PD-L1 is a clinically validated and already drugged checkpoint target, so this project should be described as an exploration of an alternative compact binder modalityânot as a solution to an undruggable target.
 
 ## Design pipeline
 
 1. **Target preparation:** download 4ZQK, identify PD-1 and PD-L1 chains by sequence/annotation, and calculate the interface rather than assuming chain IDs or hotspot numbering.
-2. **Backbone generation:** use RFdiffusion for 50–80 residue binder backbones conditioned on the PD-L1 surface and an explicitly documented hotspot set.
-3. **Sequence design:** use ProteinMPNN to design multiple sequences per backbone. LigandMPNN is optional here because this is a protein–protein interface; its main advantage is explicit nonprotein context.
+2. **Backbone generation:** use RFdiffusion for 50â80 residue binder backbones conditioned on the PD-L1 surface and an explicitly documented hotspot set.
+3. **Sequence design:** use ProteinMPNN to design multiple sequences per backbone. LigandMPNN is optional here because this is a proteinâprotein interface; its main advantage is explicit nonprotein context.
 4. **Structure validation:** use ColabFold/AlphaFold2-Multimer with multiple seeds and record binder pLDDT, interface PAE, ipTM, binder-backbone RMSD, clashes, and interface recovery.
-5. **Blocking analysis:** superpose predicted binder–PD-L1 complexes onto 4ZQK and quantify overlap with the PD-1-facing surface.
+5. **Blocking analysis:** superpose predicted binderâPD-L1 complexes onto 4ZQK and quantify overlap with the PD-1-facing surface.
 6. **Ranking:** combine structure consistency, interface confidence, clash checks, target-interface coverage, and sequence diversity. Keep all raw metrics.
 
 ## Suggested computational filters
@@ -83,3 +83,10 @@ This is a computational study. Passing AlphaFold2 or geometric filters does not 
 3. Design sequences for successful backbones.
 4. Validate a small pilot set before scaling up.
 5. Add figures and a completed report only after the run produces real outputs.
+
+
+## Current verified output
+
+Target preprocessing is complete: PDB 4ZQK was downloaded from RCSB, chain A was verified as PD-L1, chain B as PD-1, and 18 PD-L1 residues were identified by a 4.5 Angstrom heavy-atom contact calculation. The structure and CSV are in `target/`.
+
+Actual RFdiffusion/ProteinMPNN/ColabFold design PDBs are not included yet because no GPU run has been executed. Follow [`RUN_ON_COLAB.md`](RUN_ON_COLAB.md) to generate them without fabricating results.
