@@ -1,0 +1,37 @@
+{
+  "pdb_id": "4ZQK",
+  "source_url": "https://files.rcsb.org/download/4ZQK.pdb",
+  "rcsb_url": "https://www.rcsb.org/structure/4ZQK",
+  "chain_mapping": {
+    "A": "Programmed cell death 1 ligand 1 (PD-L1)",
+    "B": "Programmed cell death protein 1 (PD-1)"
+  },
+  "contact_method": {
+    "atom_records": "ATOM only",
+    "hydrogens": "excluded",
+    "cutoff_angstrom": 4.5,
+    "criterion": "any heavy-atom pair across chains A and B"
+  },
+  "pd_l1_interface_residue_count": 18,
+  "pd_l1_interface_residues": [
+    "PHE19",
+    "VAL23",
+    "ASP26",
+    "ILE54",
+    "TYR56",
+    "GLU58",
+    "GLN66",
+    "VAL76",
+    "ARG113",
+    "MET115",
+    "SER117",
+    "GLY119",
+    "GLY120",
+    "ALA121",
+    "ASP122",
+    "TYR123",
+    "LYS124",
+    "ARG125"
+  ],
+  "status": "verified structural preprocessing; not a binder-design result"
+}

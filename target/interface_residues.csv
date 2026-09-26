@@ -1,2 +1,19 @@
-residue,chain,role,source,notes
-,,,,Populate from notebook 01 after verifying chain mapping and contacts
+residue,chain,role,source,min_distance_A,atom_contact_count,partner_residues,notes
+"PHE19","A","PD-L1 interface contact","PDB 4ZQK ATOM records; heavy-atom cutoff 4.5 A","2.921","7","GLU84;LYS78","Geometric contact; not automatically a functional hotspot"
+"VAL23","A","PD-L1 interface contact","PDB 4ZQK ATOM records; heavy-atom cutoff 4.5 A","3.786","1","GLN75","Geometric contact; not automatically a functional hotspot"
+"ASP26","A","PD-L1 interface contact","PDB 4ZQK ATOM records; heavy-atom cutoff 4.5 A","3.153","7","GLN75;SER73","Geometric contact; not automatically a functional hotspot"
+"ILE54","A","PD-L1 interface contact","PDB 4ZQK ATOM records; heavy-atom cutoff 4.5 A","3.499","4","LEU128","Geometric contact; not automatically a functional hotspot"
+"TYR56","A","PD-L1 interface contact","PDB 4ZQK ATOM records; heavy-atom cutoff 4.5 A","3.546","18","ALA132;GLN133;ILE134","Geometric contact; not automatically a functional hotspot"
+"GLU58","A","PD-L1 interface contact","PDB 4ZQK ATOM records; heavy-atom cutoff 4.5 A","3.878","2","ILE134","Geometric contact; not automatically a functional hotspot"
+"GLN66","A","PD-L1 interface contact","PDB 4ZQK ATOM records; heavy-atom cutoff 4.5 A","2.906","23","ALA132;LYS131;PRO130","Geometric contact; not automatically a functional hotspot"
+"VAL76","A","PD-L1 interface contact","PDB 4ZQK ATOM records; heavy-atom cutoff 4.5 A","4.167","1","LYS131","Geometric contact; not automatically a functional hotspot"
+"ARG113","A","PD-L1 interface contact","PDB 4ZQK ATOM records; heavy-atom cutoff 4.5 A","2.645","17","GLU136;ILE134","Geometric contact; not automatically a functional hotspot"
+"MET115","A","PD-L1 interface contact","PDB 4ZQK ATOM records; heavy-atom cutoff 4.5 A","3.794","9","ALA132;ILE126;ILE134;LEU128;SER127","Geometric contact; not automatically a functional hotspot"
+"SER117","A","PD-L1 interface contact","PDB 4ZQK ATOM records; heavy-atom cutoff 4.5 A","3.831","4","LEU128","Geometric contact; not automatically a functional hotspot"
+"GLY119","A","PD-L1 interface contact","PDB 4ZQK ATOM records; heavy-atom cutoff 4.5 A","3.728","2","GLU84","Geometric contact; not automatically a functional hotspot"
+"GLY120","A","PD-L1 interface contact","PDB 4ZQK ATOM records; heavy-atom cutoff 4.5 A","3.726","3","GLU84","Geometric contact; not automatically a functional hotspot"
+"ALA121","A","PD-L1 interface contact","PDB 4ZQK ATOM records; heavy-atom cutoff 4.5 A","2.678","15","ASN66;ILE126;LYS78;TYR68;VAL64","Geometric contact; not automatically a functional hotspot"
+"ASP122","A","PD-L1 interface contact","PDB 4ZQK ATOM records; heavy-atom cutoff 4.5 A","2.557","19","ASN66;ILE126;LYS78;TYR68","Geometric contact; not automatically a functional hotspot"
+"TYR123","A","PD-L1 interface contact","PDB 4ZQK ATOM records; heavy-atom cutoff 4.5 A","2.699","55","GLU136;GLY124;ILE126;ILE134;LEU122;THR76;TYR68","Geometric contact; not automatically a functional hotspot"
+"LYS124","A","PD-L1 interface contact","PDB 4ZQK ATOM records; heavy-atom cutoff 4.5 A","2.914","27","ASP77;GLN75;LYS78;THR76","Geometric contact; not automatically a functional hotspot"
+"ARG125","A","PD-L1 interface contact","PDB 4ZQK ATOM records; heavy-atom cutoff 4.5 A","2.613","16","ASN74;GLN75","Geometric contact; not automatically a functional hotspot"
